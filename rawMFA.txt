@@ -29,7 +29,7 @@ except Exception as e:
     # Install missing modules
     modules = [
         "aiosonic", "ping3", "netlicensing-client", "discord_webhook",
-        "asyncio", "licensing", "pystyle", "aiohttp", "msmcauth", "httpx"
+        "asyncio", "licensing", "pystyle", "aiohttp", "msmcauth", "httpx", "pillow", "fade"
     ]
     for module in modules:
         system(f'python3 -m pip install {module}')
